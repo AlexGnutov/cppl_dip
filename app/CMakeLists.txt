@@ -1,7 +1,3 @@
-cmake_minimum_required(VERSION 3.26)
-project(cppl_dip)
+add_executable(ini_app main.cpp)
 
-set(CMAKE_CXX_STANDARD 14)
-
-add_executable(cppl_dip
-        main.cpp)
+target_link_libraries(ini_app PUBLIC ini_lib)
